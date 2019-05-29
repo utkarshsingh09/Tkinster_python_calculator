@@ -1,5 +1,5 @@
 import tkinter as tk
-
+from tkinter import messagebox
 mainWindow = tk.Tk()
 mainWindow.title("calculator")
 
@@ -23,7 +23,7 @@ Minus = tk.Button(mainWindow, text="-", command=lambda: minus())
 Minus.pack()
 Multiplication = tk.Button(mainWindow, text="*", command=lambda: mul())
 Multiplication.pack()
-Division = tk.Button(mainWindow, text="/", command=lambda:devide())
+Division = tk.Button(mainWindow, text="/", command=lambda: divide())
 Division.pack()
 
 Result_Label = tk.Label(mainWindow, text="result is", pady=10, padx= 20)
@@ -31,31 +31,45 @@ Result_Label.pack()
 
 
 def add():
-    first = int(First_Number_Value.get())
-    second = int(Second_Number_Value.get())
+    first, second = takeValueInput()
     name = first+second
     Result_Label.config(text="OPERATION RESULT IS" + str(name))
 
 
 def minus():
-    first = int(First_Number_Value.get())
-    second = int(Second_Number_Value.get())
+    first, second = takeValueInput()
     name = first - second
     Result_Label.config(text="OPERATION RESULT IS" + str(name))
 
 
 def mul():
-    first = int(First_Number_Value.get())
-    second = int(Second_Number_Value.get())
+    first, second = takeValueInput()
     name = first * second
     Result_Label.config(text="OPERATION RESULT IS" + str(name))
 
 
 def divide():
-    first = int(First_Number_Value.get())
-    second = int(Second_Number_Value.get())
-    name = first / second
-    Result_Label.config(text="OPERATION RESULT IS"+str(name))
+
+    first, second = takeValueInput()
+    if(second==0):
+        messagebox.showerror("error", "second no. cannot be zero")
+    else:
+        name = first / second
+        Result_Label.config(text="OPERATION RESULT IS"+str(name))
+
+def takeValueInput():
+    first = First_Number_Value.get()
+    second = Second_Number_Value.get()
+    try:
+        first = int(first)
+        second = int(second)
+        return first, second
+    except ValueError:
+        if(len(First_Number_Value.get()) == 0) or (len(Second_Number_Value.get() == 0)):
+            messagebox.showerror("Error", "please enter something")
+        else:
+            messagebox.showerror("Error", "enter integer value")
+        quit(0)
 
 
 mainWindow.mainloop()
