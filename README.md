@@ -1,19 +1,19 @@
 # Tkinster_python_calculator
 # output
-![alt text](https://github.com/utkarshsingh09/Tkinster_python_calculator/blob/master/add.png)
+![alt text](https://utkarshsingh09.github.io/Tkinster_python_calculator/add.png)
 
 # output
-![alt text](https://github.com/utkarshsingh09/Tkinster_python_calculator/blob/master/sub.png)
+![alt text](https://utkarshsingh09.github.io/Tkinster_python_calculator/sub.png)
 
 # output
-![alt text](https://github.com/utkarshsingh09/Tkinster_python_calculator/blob/master/mul.png)
+![alt text](https://utkarshsingh09.github.io/Tkinster_python_calculator/mul.png)
 
 # output
-![alt text](https://github.com/utkarshsingh09/Tkinster_python_calculator/blob/master/divide.png)
+![alt text](https://utkarshsingh09.github.io/Tkinster_python_calculator/divide.png)
 
 # output
-![alt text](https://github.com/utkarshsingh09/Tkinster_python_calculator/blob/master/enter_something.png)
+![alt text](https://utkarshsingh09.github.io/Tkinster_python_calculator/enter_something.png)
 
 
 # output
-![alt text](https://github.com/utkarshsingh09/Tkinster_python_calculator/blob/master/division_by_zero.png)
+![alt text](https://utkarshsingh09.github.io/Tkinster_python_calculator/division_by_zero.png)
